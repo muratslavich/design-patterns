@@ -5,6 +5,17 @@ interface Device {
     var volume: Int
 }
 
+class Remote(val device: Device) {
+
+    fun togglePower() {
+        device.isEnabled = !device.isEnabled
+    }
+
+    fun volumeUp() = run { device.volume += 10 }
+    fun volumeDown() = run { device.volume -= 10 }
+
+}
+
 class Tv(override var isEnabled: Boolean = false, override var volume: Int = 0) : Device
 class Radio(override var isEnabled: Boolean = true, override var volume: Int = 10) : Device
 
