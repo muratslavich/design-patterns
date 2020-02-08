@@ -1,7 +1,5 @@
 package structural.proxy
 
-import com.sun.org.apache.xpath.internal.operations.Bool
-
 interface ThirdPartyLib {
     fun listVideos(): String
     fun getVideoInfo(id: Int): String
