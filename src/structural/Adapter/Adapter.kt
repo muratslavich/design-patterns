@@ -6,13 +6,21 @@ interface Temperature {
     var temperature: Double
 }
 
-open class CelsiusTemperature(override var temperature: Double): Temperature
-class FahrenheitTemperature(override var temperature: Double): Temperature
+open class CelsiusTemperature(
+    override var temperature: Double
+): Temperature
 
-class FahrenheitAdapter(private val celsiusTemperature: CelsiusTemperature) {
+class FahrenheitTemperature(
+    override var temperature: Double
+): Temperature
+
+class FahrenheitAdapter(
+    private val celsiusTemperature: CelsiusTemperature
+) {
     fun convertToFahrenheitTemperature(): FahrenheitTemperature = FahrenheitTemperature(
-        ((BigDecimal.valueOf(celsiusTemperature.temperature).setScale(2) * BigDecimal(9) / BigDecimal(5)) + BigDecimal(32))
-        .toDouble()
+        ((BigDecimal.valueOf(celsiusTemperature.temperature)
+            .setScale(2) * BigDecimal(9) / BigDecimal(5)) + BigDecimal(32))
+            .toDouble()
     )
 }
 
