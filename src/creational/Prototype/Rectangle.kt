@@ -1,7 +1,15 @@
 package creational.Prototype
 
-class Rectangle : Shape {
+abstract class Shape(
+    private var Y: Int? = null,
+    private var X: Int? = null,
+    private var color: String? = null
+) {
+    constructor(source: Shape) : this(source.X, source.Y, source.color)
+    abstract fun clone(): Shape
+}
 
+class Rectangle : Shape {
     var width: Int?
     var height: Int?
 
@@ -16,13 +24,6 @@ class Rectangle : Shape {
     }
 
     override fun clone(): Shape = Rectangle(this)
-
-    override fun toString(): String {
-        val superString = super.toString()
-        return "$superString Rectangle(width=$width, height=$height)"
-    }
-
-
 }
 
 fun main() {
