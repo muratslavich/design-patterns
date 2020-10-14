@@ -32,7 +32,7 @@ class CommandProcessor {
 class CommandTest {
 
     @Test
-    fun Command() {
+    fun command() {
         CommandProcessor()
             .addToQueue(OrderAddCommand(1L))
             .addToQueue(OrderAddCommand(2L))

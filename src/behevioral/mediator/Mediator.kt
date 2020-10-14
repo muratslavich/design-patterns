@@ -1,4 +1,4 @@
-package behevioral.Mediator
+package behevioral.mediator
 
 import org.junit.jupiter.api.*
 

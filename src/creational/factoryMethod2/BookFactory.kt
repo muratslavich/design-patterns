@@ -1,4 +1,4 @@
-package creational.FactoryMethod_2
+package creational.factoryMethod2
 
 enum class Genre {
     SCIENCE, LITERATURE

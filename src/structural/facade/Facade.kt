@@ -1,4 +1,4 @@
-package structural.Facade
+package structural.facade
 
 class ComplexSystem(private val filePath: String) {
     private val cache: HashMap<String, String>

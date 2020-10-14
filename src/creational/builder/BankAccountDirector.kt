@@ -1,4 +1,4 @@
-package creational.Builder
+package creational.builder
 
 class BankAccountDirector(private val builder: BankAccount.Builder) {
 

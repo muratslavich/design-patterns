@@ -1,4 +1,4 @@
-package creational.FactoryMethod_3
+package creational.factoryMethod3
 
 interface Dependency<T> {
     var mocked: T?

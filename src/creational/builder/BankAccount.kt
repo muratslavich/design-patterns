@@ -1,4 +1,4 @@
-package creational.Builder
+package creational.builder
 
 class BankAccount(builder: BankAccount.Builder) {
     private val accountNumber: Double?

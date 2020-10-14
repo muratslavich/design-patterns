@@ -1,4 +1,4 @@
-package structural.Decorator
+package structural.decorator
 
 interface CoffeeMachine {
     fun makeSmallCoffee()

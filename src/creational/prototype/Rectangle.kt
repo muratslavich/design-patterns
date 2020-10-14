@@ -1,4 +1,4 @@
-package creational.Prototype
+package creational.prototype
 
 abstract class Shape(
     private var Y: Int? = null,

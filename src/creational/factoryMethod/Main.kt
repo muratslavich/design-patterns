@@ -1,4 +1,4 @@
-package creational.FactoryMethod
+package creational.factoryMethod
 
 import java.lang.RuntimeException
 

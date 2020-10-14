@@ -1,4 +1,4 @@
-package creational.Prototype
+package creational.prototype
 
 class Bike: Cloneable {
     var gears: Int

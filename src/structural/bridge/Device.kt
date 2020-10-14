@@ -1,4 +1,4 @@
-package structural.Bridge
+package structural.bridge
 
 // Implementation layer
 interface Device {

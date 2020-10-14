@@ -1,4 +1,4 @@
-package structural.Flyweight
+package structural.flyweight
 
 // This class contain part of tree describing. It isn`t unique for each tree
 // so it extract to own abstraction with container

@@ -1,4 +1,4 @@
-package structural.Composite
+package structural.composite
 
 // hierarchy
 open class Equipment(open val price: Int, name: String)
